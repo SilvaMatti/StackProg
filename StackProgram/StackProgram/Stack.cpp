@@ -26,10 +26,7 @@ bool isfull (stack s)
 bool isempty (stack s)
 {
 	//return(s.top==-1);
-	if (s.top==-1)
-		return true;
-	else 
-		return false;
+	return (s.top==-1);
 }
 
 void push (stack &s, int item)
