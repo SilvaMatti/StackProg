@@ -46,8 +46,11 @@ int pop (stack &s)
 		cout<<"stack is EMPTY\n";
 		return 0;
 	}
+	else
+	{
 	s.top--;
 	return s.items[s.top+1];
+	}
 }
 
 int main ()
