@@ -25,7 +25,6 @@ bool isfull (stack s)
 
 bool isempty (stack s)
 {
-	//return(s.top==-1);
 	return (s.top==-1);
 }
 
@@ -43,6 +42,7 @@ int pop (stack &s)
 		cout<<"stack is EMPTY\n";
 		return 0;
 	}
+	else
 	s.top--;
 	return s.items[s.top+1];
 }
