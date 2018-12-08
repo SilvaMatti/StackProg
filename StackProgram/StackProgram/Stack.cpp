@@ -25,11 +25,14 @@ bool isfull (stack s)
 
 bool isempty (stack s)
 {
-	//return(s.top==-1);
 	if (s.top==-1)
+	{
 		return true;
+	}
 	else 
+	{
 		return false;
+	}
 }
 
 void push (stack &s, int item)
@@ -47,10 +50,8 @@ int pop (stack &s)
 		return 0;
 	}
 	else
-	{
 	s.top--;
 	return s.items[s.top+1];
-	}
 }
 
 int main ()
